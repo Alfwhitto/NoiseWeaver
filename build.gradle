@@ -1,0 +1,41 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.21'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base { archivesName = project.archives_base_name }
+
+repositories { mavenCentral() }
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    implementation "net.fabricmc.fabric-api:fabric-key-mapping-api-v1:2.0.8+3434d6d95d"
+    implementation "net.fabricmc.fabric-api:fabric-lifecycle-events-v1:4.1.9+ffef5f675d"
+    // Compile against MixinExtras' local-variable capture annotation. Fabric Loader
+    // provides MixinExtras at runtime, so this is not bundled into the mod.
+    compileOnly "io.github.llamalad7:mixinextras-common:0.5.0"
+}
+
+
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    withSourcesJar()
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand 'version': project.version }
+}
+
+
+
+
+
+
+

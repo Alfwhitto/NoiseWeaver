@@ -1,0 +1,16 @@
+{
+  "key.noiseweaver.open_menu": "Open NoiseWeaver menu",
+  "key.noiseweaver.toggle_tool": "Toggle NoiseWeaver tool",
+  "key.category.noiseweaver.keys": "NoiseWeaver",
+  "screen.noiseweaver.title": "NoiseWeaver — Inventory Weights",
+  "screen.noiseweaver.help": "Toggle carried blocks, set each weight from 0.00 to 1.00; percentages are normalized.",
+  "screen.noiseweaver.close": "Done",
+  "screen.noiseweaver.empty_inventory": "No block items in your inventory or hotbar.",
+  "chat.noiseweaver.enabled": "NoiseWeaver placement mode enabled. Placed blocks will follow the noise palette.",
+  "chat.noiseweaver.disabled": "NoiseWeaver tool disabled.",
+  "chat.noiseweaver.corner": "Corner %s set at %s",
+  "chat.noiseweaver.applied": "",
+  "chat.noiseweaver.invalid": "Invalid block ID or weight. Use a registered block and a positive number.",
+  "chat.noiseweaver.empty": "Enable at least one inventory block with a positive weight first."
+}
+

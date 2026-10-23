@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "noiseweaver",
+  "version": "${version}",
+  "name": "NoiseWeaver",
+  "description": "Place enabled inventory blocks using weighted coherent noise.",
+  "authors": ["Codex"],
+  "environment": "client",
+  "entrypoints": { "client": ["dev.mak.noiseweaver.NoiseWeaverClient"] },
+  "mixins": ["noiseweaver.mixins.json"],
+  "depends": { "fabricloader": ">=0.19.5", "minecraft": "26.3.x", "java": ">=25", "fabric-api": "*" }
+}
+
